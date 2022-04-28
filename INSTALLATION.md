@@ -9,6 +9,8 @@ The provided `install.sh` script will build everything and install it for you. B
 - Ubuntu:
 ```
 sudo apt install g++ extra-cmake-modules qtbase5-dev qtdeclarative5-dev libkf5declarative-dev libkf5plasma-dev libkdecorations2-dev gettext
+dpkg-buildpackage -us -uc
+sudo dpkg -i ../plasma-applet-window-buttons_*.deb
 ```
 - Fedora:
 ```

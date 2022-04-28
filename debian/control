@@ -1,0 +1,28 @@
+Source: plasma-applet-window-buttons
+Section: kde
+Priority: optional
+Maintainer: Johan Källström <joka90@gmail.com>
+Uploaders: Johan Källström <joka90@gmail.com>,
+Build-Depends: cmake (>= 3.0~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.9.5~),
+               qtbase5-dev,
+               qtdeclarative5-dev,
+               libkf5declarative-dev,
+               libkf5plasma-dev,
+               libkdecorations2-dev,
+               gettext,
+               pkg-kde-tools
+Standards-Version: 4.6.0
+Homepage: https://github.com/joka90/plasma-applet-window-buttons/
+Vcs-Browser: https://github.com/joka90/plasma-applet-window-buttons/
+Vcs-Git: https://github.com/joka90/plasma-applet-window-buttons.git
+Rules-Requires-Root: no
+
+
+Package: plasma-applet-window-buttons
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Plasma 5 applet that shows window buttons in your panels.
+ This is a Plasma 5 applet that shows window buttons in your panels.
